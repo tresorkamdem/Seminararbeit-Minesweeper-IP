@@ -1,8 +1,8 @@
 
 
-Kapitel 4: Mathematische Modellierung des Minesweeper-Problems
+Kapitel 3: Mathematische Modellierung des Minesweeper-Problems
 
-4.1 Problembeschreibung
+3.1 Problembeschreibung
 
 Das Ziel des Minesweeper-Puzzles besteht darin, die Position aller versteckten Minen auf einem rechteckigen Spielfeld zu bestimmen. Im Gegensatz zum klassischen Computerspiel ist das gesamte Zahlenmuster bereits bekannt. Jede Zahl gibt an, wie viele Minen sich in den benachbarten Feldern befinden.
 
@@ -12,7 +12,7 @@ Da jede Zelle nur zwei Zustände annehmen kann und zahlreiche logische Bedingung
 
 ⸻
 
-4.2 Mengen und Indizes
+3.2 Mengen und Indizes
 
 Zur Beschreibung des Spielfelds werden folgende Mengen definiert:
 
@@ -44,7 +44,7 @@ identifiziert.
 
 ⸻
 
-4.3 Entscheidungsvariablen
+3.3 Entscheidungsvariablen
 
 Für jedes Feld (i,j) wird eine binäre Variable definiert:
 
@@ -59,7 +59,7 @@ Die Variablen beschreiben somit die unbekannte Position aller Minen.
 
 ⸻
 
-4.4 Definitionsbereich
+3.4 Definitionsbereich
 
 Da ein Feld entweder eine Mine enthält oder nicht, gilt:
 
@@ -71,7 +71,7 @@ Es handelt sich somit um binäre Entscheidungsvariablen.
 
 ⸻
 
-4.5 Nachbarschaft eines Feldes
+3.5 Nachbarschaft eines Feldes
 
 Für jedes Feld (i,j) werden alle unmittelbar angrenzenden Felder betrachtet.
 
@@ -90,7 +90,7 @@ Ein Feld besitzt somit höchstens acht Nachbarn.
 
 ⸻
 
-4.6 Parameter
+3.6 Parameter
 
 Die bekannten Zahlen des Rätsels werden durch die Matrix
 
@@ -108,7 +108,7 @@ Diese Werte sind bekannt und bilden die Eingabedaten des Modells.
 
 ⸻
 
-4.7 Nebenbedingungen
+3.7 Nebenbedingungen
 
 Für jedes aufgedeckte Zahlenfeld muss gelten, dass die Anzahl der benachbarten Minen exakt dem angegebenen Zahlenwert entspricht.
 
@@ -126,7 +126,7 @@ Diese Gleichung stellt sicher, dass jede Zahl genau durch die umliegenden Minen 
 
 ⸻
 
-4.8 Beispiel einer Nebenbedingung
+3.8 Beispiel einer Nebenbedingung
 
 Angenommen ein Feld enthält die Zahl
 
@@ -155,7 +155,7 @@ Dies bedeutet, dass sich unter den acht Nachbarfeldern genau zwei Minen befinden
 
 ⸻
 
-4.9 Zielfunktion
+3.9 Zielfunktion
 
 Für die Lösbarkeit des Minesweeper-Puzzles ist keine eigentliche Zielfunktion erforderlich.
 
@@ -171,7 +171,7 @@ Das Problem wird somit als reines Feasibility Problem formuliert.
 
 ⸻
 
-4.10 Ziel des Solvers
+3.10 Ziel des Solvers
 
 Der Solver erhält:
 
